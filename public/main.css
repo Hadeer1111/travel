@@ -1,0 +1,477 @@
+@font-face {
+    font-family: 'Circular Std';
+    src: url('./circular-std-font-family/CircularStd-Book.woff2') format('woff2'),
+         url('./circular-std-font-family/CircularStd-Book.woff') format('woff');
+    /* Add more font weights and formats if needed */
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+  }
+
+body{
+    width: fit-content;
+}
+
+.homeScreen{
+width: 100%;
+height: 100vh;
+}
+
+.secondBackground{
+    width: 100%;
+    height: 399px;
+    background-image: url(images/second\ background.png);
+}
+
+.text{
+color: #FFF;
+font-size: 50px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+text-transform: capitalize;
+margin-left: 20%;
+padding-top: 10%;
+
+}
+
+.fade-effect {
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.385), rgba(0, 0, 0, 0.385));
+}
+
+.color{
+    color: black !important;
+}
+
+.hidden {
+    display: none !important;
+  }
+  .visible {
+    display: block !important; /* or any other desired display property */
+  }
+
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: white !important;
+  }
+  
+
+.filter{
+    background: rgba(30, 30, 30, 0.38);
+}
+
+.card:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.prices{
+
+    background-color: #DF6951; width: 40%; height: 15%; left: 50%; top:9%;
+}
+
+.shadow {
+    background-color: transparent;
+     /* No box shadow by default */
+     box-shadow: 0px 0px 0px rgba(1, 1, 1, 0) !important;
+    transition: box-shadow 0.6s; /* Add a transition for smooth effect */
+  }
+  
+  .shadow:hover {
+    /* Add a border with 2px width on hover */
+    border-top: none; /* Remove the top border on hover */
+    border-bottom-right-radius: 15%;
+    border-bottom-left-radius: 15%;
+    background-color: white;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2) !important; /* Add a shadow on hover */
+
+    .displayImg{
+        display: block !important;
+    }
+  }
+
+.city:hover{
+    text-decoration: underline;
+}
+
+.navItems:hover{
+    text-decoration: underline;
+    text-decoration-color: #DF6951;
+}
+
+.placeholder::placeholder{ 
+        color: #18143335 !important;
+}
+
+
+/* Apply styles to the searchDiv container */
+.searchDiv {
+    width: 100%;
+    background-color: #F3F3F399;
+    backdrop-filter: blur(17.760618209838867px);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+/* Apply styles to input container */
+.input-container {
+    width: 100%;
+    max-width: 250px;
+    margin-bottom: 10px;
+}
+
+/* Apply styles to image containers */
+.image-container {
+    flex: 1;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+/* Apply styles to dropdown containers */
+.dropdown-container {
+    flex: 1;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+/* Apply styles to buttons */
+.button-container {
+    margin-left: auto;
+}
+
+/* Additional styles for elements */
+.form-control {
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    border: none;
+    background-color: transparent;
+    font-display: swap;
+}
+
+.btn {
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    border: none;
+    background-color: transparent;
+    font-display: swap;
+}
+
+.searchDropdown1::after,
+.dropdown-toggle::after {
+    display: none; /* Remove the default caret icon in buttons */
+}
+
+
+
+@media screen and (max-width: 400px) {
+
+    .searchDiv {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .input-container,
+    .image-container,
+    .dropdown-container,
+    .button-container {
+        width: 100%;
+        max-width: none;
+        margin: 0;
+    }
+
+    .button-container {
+        margin-top: 10px;
+    }
+
+    .logo{
+        font-size: 60% !important;
+        margin-left: 46px !important;
+        padding-top: -20% !important;
+    }
+
+    .navBar{
+        padding: 2% !important;
+    }
+   
+    .logoImg{
+    width: 12% !important;
+    margin-left: 16% !important;
+    margin-top: -7% !important;
+    }
+
+    .logoButton{
+        display: flex !important;
+        justify-content: space-between !important;
+        width: 60% !important;
+    }
+
+    .navButton{
+        margin-left: 95%;
+    }
+
+    .img29{
+     width: 10%;
+    }
+
+    .displayNone{
+        display: none !important;
+    }
+
+    .navText{
+        font-size: 50% !important;
+    }
+
+    .input{
+        margin-top: -1.5% !important;
+        width: 43% !important;
+        margin-left: -63% !important;
+    }
+
+    .textSize{
+        font-size: 10px !important;
+    }
+
+
+    .img55{
+        width: 30% !important;
+    }
+
+    .img55Text{
+        font-size: 40%;
+    }
+
+    .searchButton{
+        padding: 0px 7px 1px 7px !important;
+        font-size: 65% !important;
+    }
+
+    .img56{
+        width: 20%;
+    left: 40% !important;
+    top: 92% !important;
+    }
+
+    .searchDiv{
+        width: 70% !important;
+        height: 19% !important;
+        margin-bottom: 1% !important;
+    } 
+
+    .img53{
+       display: none !important;
+    }
+
+    .searchDropdown1{
+        width: 40% !important;
+        font-size: 10px !important;
+    }
+
+
+
+    .prices{
+        left: 45%;
+    }
+
+    .footerImage{
+        top: 60%;
+        right: 40%;
+    }
+
+    .footerText{
+        text-align: center;
+        color: #FFF;
+font-size: 50px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+text-transform: capitalize;
+margin-left: 5%;
+
+    }
+
+    .email p{
+        font-size: 25%;
+    }
+
+    .Copyright{
+        width: 100%;
+        margin-left: -40%;    
+    }
+
+    .emptyDiv{
+        margin-left: -2%; 
+    }
+
+
+    .paraText{
+        font-size: 30%;
+        
+
+    }
+
+    .imgSize32{
+        width: 60%;
+    }
+
+    .imgSize33{
+        width: 30%;
+    }
+
+    .honeymoon{
+        text-align: center;
+    }
+
+    .honeymoonText{
+        width: 100% !important;
+    }
+
+    .fastAndEasy{
+        padding-top: 3%;
+    }
+
+    .fastAndEasyText{
+        width: 100% !important;
+    }
+
+    .holidayText{
+       font-size: 50% !important;
+    }
+
+    .holidayImage{
+      width: 30% !important;
+    }
+
+    .promotion{
+        text-align: center !important;
+        width: 100% !important;
+    }
+
+    .promotionTitle{
+        text-align: center !important;
+        width: 100% !important;
+    }
+
+    .promotionText{
+        text-align: center !important;
+        width: 100% !important;
+    }
+
+    .promotionImages{
+        margin-left: 4%;
+    }
+
+    .promotionBImg{
+        display: none;
+    }
+
+    .imgPosition{
+        left:34% !important;
+        top:15% !important;
+    }
+
+.imgPositionTitle{
+    font-size: 20px !important;
+}
+
+.buttons{
+  margin-left: 120% !important;
+  width: 100% !important;
+}
+
+.img31{
+    width: 25% !important;
+    top:45% !important;
+}
+
+.img32{
+    width: 50% !important;
+    top:45% !important;
+    left:25% !important;
+}
+
+.img33{
+    width: 13% !important;
+    left: 45% !important;
+    top: 35% !important;
+}
+
+.img34{
+    width: 7% !important;
+    left: 29% !important;
+
+}
+
+.img35{
+    width: 15% !important;
+    left: 17% !important;
+
+}
+
+.img36{
+    width: 15% !important;
+    left: 68% !important;
+
+}
+
+.img37{
+    width: 25% !important;
+    top:90% !important;
+    left:35% !important;
+}
+
+.name{
+    font-size: 50%;
+    top:92% !important;
+    left:35% !important;
+}
+
+.views{
+    height: 35%;
+}
+
+.viewsTitle{
+    font-size: 50% !important;
+}
+
+.viewsText{
+    font-size: 68% !important;
+    top: 25% !important;
+    left: 40% !important;
+}
+
+.sDd1{
+    margin-left: -19% !important;
+    margin-top: -3% !important;
+}
+
+.sDd2{
+    margin-left: 34% !important;
+    margin-top: -2% !important;
+}
+
+.ulStyling{
+    align-items: end !important;
+}
+
+.aStyling{
+    padding: 0% !important;
+}
+
+.clicked:focus{
+
+    .dNone{
+        display: none !important;
+    }
+}
+
+.pTitle{
+    top: 18% !important;
+    left: 45% !important;
+}
+
+}
+
